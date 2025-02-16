@@ -1,69 +1,87 @@
 <html>
-    <head>
-        <title>Strona główna</title>
-        <!--head- INFORMACJE DLA PRZEGLADARKI, SKRYPTY, STYLE-->
-        <meta charset="utf-8">
 
-        <style>
+	<head>
+		<title>Strona główna</title>
+		<!-- head - informacje dla przeglądarki, skrypty, style -->
+		<meta charset="UTF-8">
+		
+		<style>
+			* {
+				margin: 0;
+			}
+		
+			.bg-green {
+				background-color: #6ab926;
+				color: #fff;
+				padding: 10px;
+				text-align: center;
+				font-family: sans-serif;
+				font-size: 10px;
+			}
+			
+			#info {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100vw;
+    min-height: 25px;
+}
+			
+#nav {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	padding: 20px
+}
 
-            * {
-                margin: 0;
-        }
-
-
-            .bg-green {
-                background-color: #6bd80c;
-                color: white;
-                padding: 10px;
-                text-align: center;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                font-size: 10px;
-        }
-            #info {
-                position: fixed;
-                top: 0;
-                left: 0;
-                z-index:9;
-                width: 100vw;
-                min-height: 25px;
-        }
-
-        #nav {
-            margin-top: 50px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-            body {
-                min-height: 200vh;
-
-        }
-
-
-        </style>
-
-
-    </head>
-
-    <body>
-        <header>
-          <div id="info" class="bg-green">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget rutrum odio. Donec maximus rutrum libero eu accumsan.
-          </div>
-        </header>
-
-        <main>
-        </main>
-
-        <footer>
-        </footer>
-        
-
-    </body>
-
-
-
-
-
+#nav > div {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    column-gap: 20px;
+}
+			
+			body {
+				min-height: 200vh;
+			}
+		</style>
+	</head>
+	
+	<body>
+	
+		<header>
+			<div id="info" class="bg-green">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget rutrum odio. Donec maximus rutrum libero eu accumsan.
+</strong></div>
+			
+			<div id="nav">
+			  <div>
+			    <div>
+			      Link 1
+			    </div>
+			    <div>
+			      Link 2
+			    </div>
+			  </div>
+			  <div>
+			    <div>
+			      Link 3
+			    </div>
+				<div>
+			      Link 4
+			    </div>
+			  </div>
+			</div>
+		</header>
+		
+		<main>
+		</main>
+		
+		<footer>
+		</footer>
+	
+	</body>
 
 </html>
