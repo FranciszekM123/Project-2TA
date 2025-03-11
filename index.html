@@ -4,6 +4,7 @@
 		<title>Strona główna</title>
 		
 		<meta charset="UTF-8">
+    
 		
 		<style>
 			* {
@@ -19,8 +20,19 @@
 				font-size: 10px;
 			}
 
+body { 
+  width:100%;
+  background-image: url("https://t3.ftcdn.net/jpg/07/48/64/52/240_F_748645209_VTfdzGZI6ZKIGZ4U3mO2LL6KtG1dMysY.jpg"); 
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
+  height:700px
+}
+
 .container {
   position: relative;
+  padding: 20px;
+  text-align: center;
 }
 
 
@@ -144,7 +156,40 @@
 			body {
 				min-height: 200vh;
 			}
-		</style>
+            table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #6ab926;
+            color: white;
+        }
+        ol {
+            text-align: left;
+            margin-top: 20px;
+            padding-left: 40px;
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {
+            color: #6ab926;
+            text-decoration: none;
+        }
+    </style>
+		
 	</head>
 	
 	<body>
@@ -263,15 +308,49 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
+
 				
 		</header>
 		
 		<main>
+            <div class="container">
+                <h2>Lista przedmiotów</h2>
+                <ol>
+                    <li>Matematyka</li>
+                    <li>Język angielski</li>
+                    <li>Fizyka</li>
+                    <li>Historia</li>
+                </ol>
+                <h2>Plan zajęć</h2>
+                <table>
+                    <tr>
+                        <th>Dzień</th>
+                        <th>Godzina</th>
+                        <th>Przedmiot</th>
+                    </tr>
+                    <tr>
+                        <td>Poniedziałek</td>
+                        <td>8:00 - 9:30</td>
+                        <td>Matematyka</td>
+                    </tr>
+                    <tr>
+                        <td>Wtorek</td>
+                        <td>10:00 - 11:30</td>
+                        <td>Język angielski</td>
+                    </tr>
+                    <tr>
+                        <td>Środa</td>
+                        <td>12:00 - 13:30</td>
+                        <td>Fizyka</td>
+                    </tr>
+                </table>
 		</main>
 		
 		<footer>
+            <p><a href="mailto:kontakt@example.com">Kontakt</a></p>
 		</footer>
 	
 	</body>
 
 </html>
+
